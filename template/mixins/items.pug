@@ -1,0 +1,19 @@
+mixin product-item(image, title, new_price, old_price, discount)
+  div(class="")
+    div(class="lg:rounded-[20px] rounded-[14px] truncate aspect-square bg-[#F0EEED]")
+      img(src=image, alt=title , class="w-full h-full object-cover")
+    h3(class="font-[700] lg:text-[18px] text-[14px] text-primary lg:mt-[20px] mt-[12px] mb-[10px]") #{title}
+    div(class="flex items-center flex-wrap")
+      div(class="lg:text-[18px] text-[15px] text-[#FFC633] lg:mr-[13px] mr-[11px]")
+        i(class="fa-solid fa-star")  
+        i(class="fa-solid fa-star")  
+        i(class="fa-solid fa-star")  
+        i(class="fa-solid fa-star")  
+        i(class="fa-solid fa-star")
+      div(class="font-[400] text-[14px] text-[#00000099]") 5/5    
+    div(class="lg:mt-[11px] mt-[6px] flex items-center flex-wrap")
+      div(class="font-700 lg:text-[18px] text-[14px] text-primary") #{new_price}
+      if(old_price)
+        div(class="lg:ml-[10px] ml-[6px] font-[700] lg:text-[14px] text-[12px] text-[#00000066] mr-[10px] line-through") #{old_price ? old_price : ""}   
+      if(discount)  
+        div(class="font-[500] lg:text-[12px] text-[10px] text-[#FF3333]  bg-[#FF33331A] lg:px-[12px] px-[3px] lg:py-[6px] py-[3px] rounded-[62px]") #{discount ? discount : ""}   
