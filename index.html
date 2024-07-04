@@ -4,17 +4,10 @@
     <title>Trang chủ </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/odometer.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
-    <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4KJVCEVWC"></script>
-   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-S4KJVCEVWC');
-</script>
   </head>
   <body> 
     <div class="bg-primary py-[10px]">
@@ -45,24 +38,33 @@
     <div class="bg-[#F2F0f1] ">
       <div class="container mx-auto sm:px-[0px] px-[16px] flex justify-between items-center flex-wrap">
         <div class="lg:w-[50%] w-[100%] mt-[40px]">
-          <h1 class="font-[900] xl:text-[48px] lg:text-[38px] text-[28px] text-primary xl:mb-[30px] mb-[20px] ">CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI</h1>
-          <div class="font-[400]  xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]">Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.</div><a class="font-[500] text-[16px] text-white bg-primary rounded-[62px] py-[16px] px-[64px] inline-block sm:w-auto w-[100%] text-center" href="">Xem Ngay</a>
+          <h1 class="font-[900] xl:text-[48px] lg:text-[38px] text-[28px] text-primary xl:mb-[30px] mb-[20px] " data-aos="zoom-in" data-aos-duration="1000">CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI</h1>
+          <div class="font-[400]  xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]" data-aos="zoom-in" data-aos-duration="1800">Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.</div><a class="font-[500] text-[16px] text-white bg-primary rounded-[62px] py-[16px] px-[64px] inline-block sm:w-auto w-[100%] text-center" href="" data-aos="zoom-in" data-aos-duration="2500">Xem Ngay</a>
           <div class="xl:mt-[50px] mt-[30px] flex flex-wrap sm:justify-start justify-center">
             <div class="sm:pr-[32px] pr-0 mr-[32px] sm:border-r sm:ml-0 ml-[32px] sm:text-left text-center"> 
-              <div class="font-[700] xl:text-[40px] text-[24px] text-primary">200+  </div>
+              <div class="font-[700] xl:text-[40px] text-[24px] text-primary flex">
+                <div class="odometer flex-wrap" id="odometer">000</div>
+                <div class="flex-wrap mt-[4px]">+</div>
+              </div>
               <div class="font-[400] xl:text-[16px] text-[12px]  text-[#00000099]">Thương Hiệu </div>
             </div>
             <div class="sm:pr-[32px] pr-0  mr-[32px] sm:border-r sm:ml-0 ml-[32px] sm:text-left text-center">
-              <div class="font-[700] xl:text-[40px] text-[24px] text-primary">2,000+  </div>
+              <div class="font-[700] xl:text-[40px] text-[24px] text-primary flex">
+                <div class="odometer flex-wrap" id="odometer1">0000</div>
+                <div class="flex-wrap mt-[4px]">+  </div>
+              </div>
               <div class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]">Sản Phẩm Chất Lượng  </div>
             </div>
             <div class="sm:text-left text-center">
-              <div class="font-[700] xl:text-[40px] text-[24px] text-primary">30,000+  </div>
+              <div class="font-[700] xl:text-[40px] text-[24px] text-primary flex">
+                <div class="odometer flex-wrap" id="odometer2">000</div>
+                <div class="flex-wrap mt-[4px]">+  </div>
+              </div>
               <div class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]">Khách Hàng </div>
             </div>
           </div>
         </div>
-        <div class="lg:w-[48%] w-full relative truncate"><img class="w-full pt-[50px] mb-[-2px]" src="assets/images/Section-1img.png" alt=""/><img class="absolute top-[45%] left-[0px] w-[56px] sm:block hidden" src="assets/images/icon-1.svg" alt=""/><img class="absolute top-[14%] right-[0px] w-[104px] sm:block hidden" src="assets/images/icon-1.svg" alt=""/></div>
+        <div class="lg:w-[48%] w-full relative truncate"><img class="w-full pt-[50px] mb-[-2px]" src="assets/images/Section-1img.png" alt="" data-aos="zoom-in-up"/><img class="absolute top-[45%] left-[0px] w-[56px] sm:block hidden" src="assets/images/icon-1.svg" alt="" data-aos="zoom-in" data-aos-duration="2500"/><img class="absolute top-[14%] right-[0px] w-[104px] sm:block hidden" src="assets/images/icon-1.svg" alt="" data-aos="zoom-in" data-aos-duration="2500"/></div>
       </div>
     </div>
     <div class="bg-primary pt-[42px] pb-[12px]">
@@ -78,8 +80,8 @@
     </div>
     <div class="lg:py-[62px] py-[40px]">
       <div class="container mx-auto sm:px-[0px] px-]16px">
-        <h2 class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]">THỜI TRANG MỚI </h2>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-[20px] gap-x-[20px] gap-y-[30px]">
+        <h2 class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]" data-aos="fade-up" data-aos-duration="1500">THỜI TRANG MỚI </h2>
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-[20px] gap-x-[20px] gap-y-[30px]" data-aos="fade-up" data-aos-duration="2000">
           <div>
             <div class="lg:rounded-[20px] rounded-[14px] truncate aspect-square bg-[#F0EEED]"><img class="w-full h-full object-cover" src="assets/images/item-1.jpg" alt="Áo Thun Nam Đơn Giản"/></div>
             <h3 class="font-[700] lg:text-[18px] text-[14px] text-primary lg:mt-[20px] mt-[12px] mb-[10px]">Áo Thun Nam Đơn Giản</h3>
@@ -129,10 +131,10 @@
             </div>
           </div>
         </div>
-        <div class="text-center lg:mt-[40px] mt-[30px]"><a class="font-[500] lg:text-[16px] text-[14px] text-primary border border-[#0000001A] rounded-[62px] px-[63px] lg:py-[16px] py-[14px] lg:w-auto w-full inline-block" href="#">Xem Tất Cả</a></div>
+        <div class="text-center lg:mt-[40px] mt-[30px]"><a class="font-[500] lg:text-[16px] text-[14px] text-primary border border-[#0000001A] rounded-[62px] px-[63px] lg:py-[16px] py-[14px] lg:w-auto w-full inline-block" href="#" data-aos="fade-up" data-aos-duration="2000">Xem Tất Cả</a></div>
       </div>
     </div>
-    <div class="lg:pb-[86px] pb-[40px]">
+    <div class="lg:pb-[86px] pb-[40px] " data-aos="fade-up" data-aos-duration="2000">
       <div class="container mx-auto sm:px-[0px] px-]16px">
         <div class="bg-[#F0F0F0] lg:rounded-[40px] rounded-[28px] lg:px-[64px] px-[24px] lg:py-[70px] py-[28px]">
           <h2 class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]">DANH MỤC NỔI BẬT</h2>
@@ -149,7 +151,7 @@
         </div>
       </div>
     </div>
-    <div class="lg:pb-[80px] pb-[60px]">
+    <div class="lg:pb-[80px] pb-[60px]" data-aos="fade-up" data-aos-duration="2000">
       <div class="container mx-auto sm:px-[0px] px-[16px]">
         <h2 class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]">CẢM NHẬN CỦA KHÁCH HÀNG</h2>
         <div class="grid lg:grid-cols-3 grid-cols-1 gap-[20px]">
@@ -180,7 +182,7 @@
         </div>
       </div>
     </div>
-    <div class="relative">
+    <div class="relative" data-aos="zoom-in" data-aos-duration="1700">
       <div class="container mx-auto sm:px-[0px] px-[16px]">
         <div class="bg-primary rounded-[20px] lg:px-[64px] px-[24px] lg:py-[36px] py-[32px] flex justify-between items-center flex-wrap">
           <div class="text-white font-[700] xl:text-[40px] text-[32px] xl:w-[550px] lg:w-[450px] w-full lg:mb-[0px] mb-[20px]">CẬP NHẬT VỀ ƯU ĐÃI MỚI NHẤT CỦA CHÚNG TÔI</div>
@@ -262,5 +264,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,8 @@ html
     title Trang chủ 
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css")
     link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="stylesheet", href="assets/css/odometer.css" type="text/css")
+    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
     script(src="https://cdn.tailwindcss.com")
     script(src="tailwind.config.js")
 
@@ -51,25 +53,41 @@ html
       div(class="container mx-auto sm:px-[0px] px-[16px] flex justify-between items-center flex-wrap")
         //- Left 
         div(class="lg:w-[50%] w-[100%] mt-[40px]")
-          h1(class="font-[900] xl:text-[48px] lg:text-[38px] text-[28px] text-primary xl:mb-[30px] mb-[20px] ") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
-          div(class="font-[400]  xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
-          a(href="" class="font-[500] text-[16px] text-white bg-primary rounded-[62px] py-[16px] px-[64px] inline-block sm:w-auto w-[100%] text-center") Xem Ngay
+          h1(class="font-[900] xl:text-[48px] lg:text-[38px] text-[28px] text-primary xl:mb-[30px] mb-[20px] "
+          data-aos="zoom-in"
+          data-aos-duration="1000") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
+          div(class="font-[400]  xl:text-[16px] text-[14px] text-[#00000099] xl:mb-[50px] mb-[30px]"
+          data-aos="zoom-in"
+          data-aos-duration="1800") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
+          a(href="" class="font-[500] text-[16px] text-white bg-primary rounded-[62px] py-[16px] px-[64px] inline-block sm:w-auto w-[100%] text-center"
+          data-aos="zoom-in"
+          data-aos-duration="2500") Xem Ngay
           div(class="xl:mt-[50px] mt-[30px] flex flex-wrap sm:justify-start justify-center")
             div(class="sm:pr-[32px] pr-0 mr-[32px] sm:border-r sm:ml-0 ml-[32px] sm:text-left text-center") 
-             div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 200+  
+             div(class="font-[700] xl:text-[40px] text-[24px] text-primary flex" )
+               div(class="odometer flex-wrap" id="odometer") 000
+               div(class="flex-wrap mt-[4px]") +
              div(class="font-[400] xl:text-[16px] text-[12px]  text-[#00000099]") Thương Hiệu 
             div(class="sm:pr-[32px] pr-0  mr-[32px] sm:border-r sm:ml-0 ml-[32px] sm:text-left text-center")
-             div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 2,000+  
+             div(class="font-[700] xl:text-[40px] text-[24px] text-primary flex")
+               div(class="odometer flex-wrap" id="odometer1") 0000
+               div(class="flex-wrap mt-[4px]") +  
              div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") Sản Phẩm Chất Lượng  
             div(class="sm:text-left text-center")
-             div(class="font-[700] xl:text-[40px] text-[24px] text-primary") 30,000+  
+             div(class="font-[700] xl:text-[40px] text-[24px] text-primary flex")
+               div(class="odometer flex-wrap" id="odometer2") 000
+               div(class="flex-wrap mt-[4px]") +  
              div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") Khách Hàng 
 
         //- Right 
         div(class="lg:w-[48%] w-full relative truncate")
-          img(src="assets/images/Section-1img.png", alt="", class="w-full pt-[50px] mb-[-2px]")
-          img(src="assets/images/icon-1.svg", alt="", class="absolute top-[45%] left-[0px] w-[56px] sm:block hidden")
-          img(src="assets/images/icon-1.svg", alt="", class="absolute top-[14%] right-[0px] w-[104px] sm:block hidden")
+          img(src="assets/images/Section-1img.png", alt="", class="w-full pt-[50px] mb-[-2px]" data-aos="zoom-in-up")
+          img(src="assets/images/icon-1.svg", alt="", class="absolute top-[45%] left-[0px] w-[56px] sm:block hidden", 
+          data-aos="zoom-in"
+          data-aos-duration="2500")
+          img(src="assets/images/icon-1.svg", alt="", class="absolute top-[14%] right-[0px] w-[104px] sm:block hidden",
+          data-aos="zoom-in"
+          data-aos-duration="2500")
     //- Section-2  
     div(class="bg-primary pt-[42px] pb-[12px]")
       div(class="container mx-auto sm:px-[0px] px-[16px]")
@@ -88,8 +106,10 @@ html
     //- Section-3 
     div(class="lg:py-[62px] py-[40px]")
       div(class="container mx-auto sm:px-[0px] px-]16px")
-        h2(class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]") THỜI TRANG MỚI 
-        div(class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-[20px] gap-x-[20px] gap-y-[30px]")
+        h2(class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]" data-aos="fade-up"
+        data-aos-duration="1500") THỜI TRANG MỚI 
+        div(class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-[20px] gap-x-[20px] gap-y-[30px]" data-aos="fade-up"
+        data-aos-duration="2000")
           //- Item 
           +product-item("assets/images/item-1.jpg",
           "Áo Thun Nam Đơn Giản",
@@ -110,11 +130,13 @@ html
           )
           //- End Item 
         div(class="text-center lg:mt-[40px] mt-[30px]")
-          a(href="#" class="font-[500] lg:text-[16px] text-[14px] text-primary border border-[#0000001A] rounded-[62px] px-[63px] lg:py-[16px] py-[14px] lg:w-auto w-full inline-block") Xem Tất Cả
+          a(href="#" class="font-[500] lg:text-[16px] text-[14px] text-primary border border-[#0000001A] rounded-[62px] px-[63px] lg:py-[16px] py-[14px] lg:w-auto w-full inline-block" data-aos="fade-up"
+          data-aos-duration="2000") Xem Tất Cả
     //- End Section-3 
 
     //- Section-5 
-    div(class="lg:pb-[86px] pb-[40px]")
+    div(class="lg:pb-[86px] pb-[40px] " data-aos="fade-up"
+     data-aos-duration="2000")
       div(class="container mx-auto sm:px-[0px] px-]16px")
         div(class="bg-[#F0F0F0] lg:rounded-[40px] rounded-[28px] lg:px-[64px] px-[24px] lg:py-[70px] py-[28px]")
           h2(class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]") DANH MỤC NỔI BẬT
@@ -154,7 +176,8 @@ html
             
     //- End Section-5 
     //- Section-6 
-    div(class="lg:pb-[80px] pb-[60px]")
+    div(class="lg:pb-[80px] pb-[60px]" data-aos="fade-up"
+     data-aos-duration="2000")
       div(class="container mx-auto sm:px-[0px] px-[16px]")
         h2(class="font-[700] lg:text-[48px] text-[32px] text-primary text-center lg:mb-[54px] mb-[32px]") CẢM NHẬN CỦA KHÁCH HÀNG
         div(class="grid lg:grid-cols-3 grid-cols-1 gap-[20px]")
@@ -188,7 +211,7 @@ html
               div(class="lg:mt-[12px] mt-[8px] font-[400] lg:text-[16px] text-[14px] text-[#00000099]") #{item.desc}
     //- End Section-6 
     //- Section-7 
-    div(class="relative")
+    div(class="relative" data-aos="zoom-in" data-aos-duration="1700")
       div(class="container mx-auto sm:px-[0px] px-[16px]")
         div(class="bg-primary rounded-[20px] lg:px-[64px] px-[24px] lg:py-[36px] py-[32px] flex justify-between items-center flex-wrap")
           div(class="text-white font-[700] xl:text-[40px] text-[32px] xl:w-[550px] lg:w-[450px] w-full lg:mb-[0px] mb-[20px]") CẬP NHẬT VỀ ƯU ĐÃI MỚI NHẤT CỦA CHÚNG TÔI
@@ -258,4 +281,9 @@ html
             div(class="bg-[#FFFFFF] rounded-[6px] w-[46px] h-[30px] flex items-center justify-between px-[9px] py-[7px]")  
               img(src="assets/images/G Pay.png", alt="" ,class="w-auto h-auto" )
     //- End Footer 
+
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    script(src="assets/js/odometer.js")
+    script(src="assets/js/script.js")
+    
           
